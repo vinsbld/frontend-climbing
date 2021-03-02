@@ -1,0 +1,22 @@
+<nav class="navbar navbar-expand-sm bg-light navbar-light">
+  <ul class="navbar navbar-nav">
+    <li>
+      <button (click)="onGetAllSitesEscalade()" class="btn btn-outline-info ml-2">All</button>
+    </li>
+    <li>
+      <button class="btn btn-outline-info ml-2">Officiel</button>
+    </li>
+  </ul>
+</nav>
+<div class="container" *ngIf="sitesEscalade$">
+  <table class="table">
+    <tr>
+      <th>Id</th><th>Nom du Site</th><th>Officiel</th>
+    </tr>
+    <tr *ngFor="let s of sitesEscalade$ | async">
+        <td>{{s.id}}</td>
+      <td>{{s.name}}</td>
+      <td>{{s.official}}</td>
+    </tr>
+  </table>
+</div>
