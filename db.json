@@ -1,0 +1,19 @@
+{
+  "sites-escalade": [
+    {
+      "id": 1,
+      "name": "Mont Blanc",
+      "official": true
+    },
+    {
+      "id": 2,
+      "name": "Mont d'or",
+      "official": true
+    },
+    {
+      "id": 3,
+      "name": "Marmotte",
+      "official": false
+    }
+  ]
+}
